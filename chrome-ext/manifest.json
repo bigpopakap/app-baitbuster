@@ -1,0 +1,11 @@
+{
+  "name": "baitbuster",
+  "version": "0.1",
+  "description": "Save yourself and others from clickbait",
+  "permissions": ["webRequest", "webRequestBlocking", "*://*/*"],
+  "background": {
+    "page": "background.html",
+    "persistent": true
+  },
+  "manifest_version": 2
+}
