@@ -7,5 +7,13 @@
     "page": "background.html",
     "persistent": true
   },
+  "page_action": {
+    "default_icon": {
+      "16": "favicon/favicon-16x16.png",
+      "32": "favicon/favicon-32x32.png"
+    },
+    "default_title": "baitbuster: mark this page as clickbait",
+    "default_popup": "popup.html"
+  },
   "manifest_version": 2
 }

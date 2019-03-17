@@ -40,7 +40,6 @@ export async function getBuster(url) {
   if (postId) {
     return `${SUBREDDIT_ENDPOINT}/comments/${postId}`;
   } else {
-    // TODO add a way to request a reddit post for this URL
     return null;
   }
 }

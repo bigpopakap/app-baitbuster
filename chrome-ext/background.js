@@ -8,7 +8,10 @@ chrome.webRequest.onBeforeRequest.addListener(async (details) => {
   // but hopefully this will be quick enough that it won't be too jarring to the user.
   const redirectUrl = await getBuster(details.url);
   if (redirectUrl) {
+    chrome.pageAction.hide(details.tabId);
     chrome.tabs.update(details.tabId, { url: redirectUrl })
+  } else {
+    chrome.pageAction.show(details.tabId);
   }
 }, {
   urls: ["*://*/*"],
