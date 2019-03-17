@@ -13,4 +13,4 @@ chrome.webRequest.onBeforeRequest.addListener(async (details) => {
 }, {
   urls: ["*://*/*"],
   types: ["main_frame"]
-}, ["blocking"]);
+});

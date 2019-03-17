@@ -2,7 +2,7 @@
   "name": "baitbuster",
   "version": "0.1",
   "description": "Save yourself and others from clickbait",
-  "permissions": ["webRequest", "webRequestBlocking", "*://*/*"],
+  "permissions": ["webRequest", "*://*/*"],
   "background": {
     "page": "background.html",
     "persistent": true
